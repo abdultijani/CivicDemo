@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CivicNow</title>
+<title>Find Representatives | CivicNow</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,36 +19,26 @@
 
 <body>
 
-
 <!-- HEADER -->
 
 <header>
 
 <div class="header-container">
 
-<a href="index.html"><div class="logo"> <div class="nav-box">
-CivicNow</div>
-</div>
+<a href="index.html">
+<div class="logo">CivicNow</div>
 </a>
 
-<!--Navigation-->
 <nav class="main-nav">
 
-<a href="FindReps.html" class="active">
-<div class="nav-box">Find Reps</div>
-</a>
+<a href="FindReps.html"><div class="nav-box active">Find Reps</div></a>
 
-<a href="VoterInfo.html">
-<div class="nav-box">Voter Info</div>
-</a>
+<a href="VoterInfo.html"><div class="nav-box">Voter Info</div></a>
 
-<a href="About.html">
-<div class="nav-box">About</div>
-</a>
+<a href="About.html"><div class="nav-box">About</div></a>
 
-<a href="FAQs.html">
-<div class="nav-box">FAQs</div>
-</a>
+<a href="FAQs.html"><div class="nav-box">FAQs</div></a>
+
 </nav>
 
 </div>
@@ -56,24 +46,29 @@ CivicNow</div>
 </header>
 
 
-
 <!-- MAIN -->
 
-<main class="container">
+<main class="container rep-page">
 
-<!-- HERO SECTION -->
 
-<section class="hero">
+<section class="rep-hero">
 
-<h1>Find Reps</h1>
+<h1>Find Your Representatives</h1>
 
-<p>This is the Find Reps page</p>
+<p>Enter your address to see the officials who represent you.</p>
 
+<div class="rep-search-box">
+
+<input id="addressInput" type="text" placeholder="Enter your home address">
+
+<button id="findButton">Find My Representatives</button>
 
 </div>
 
 </section>
 
+
+<section id="repResults"></section>
 
 </main>
 
@@ -82,12 +77,152 @@ CivicNow</div>
 <!-- FOOTER -->
 
 <footer>
-<p>Privacy Policy | Contact Us</p>
 
+<p>Privacy Policy | Contact Us</p>
 
 <p>© 2026 CivicNow • Massachusetts Civic Engagement Platform • All Rights Reserved</p>
 
 </footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+const API_KEY = "YOUR_API_KEY";
+
+document.getElementById("findButton").addEventListener("click", findReps);
+
+async function findReps(){
+
+const address = document.getElementById("addressInput").value;
+
+const url =
+`https://www.googleapis.com/civicinfo/v2/representatives?address=${encodeURIComponent(address)}&key=${API_KEY}`;
+
+const response = await fetch(url);
+
+const data = await response.json();
+
+displayResults(data);
+
+}
+
+
+
+function displayResults(data){
+
+const container = document.getElementById("repResults");
+
+container.innerHTML = "";
+
+
+const federal = [];
+const state = [];
+const local = [];
+
+
+data.offices.forEach(office => {
+
+office.officialIndices.forEach(index => {
+
+const official = data.officials[index];
+
+const rep = {
+
+name: official.name,
+photo: official.photoUrl || "rep-placeholder.jpg",
+party: official.party || "",
+role: office.name,
+website: official.urls ? official.urls[0] : "#"
+
+};
+
+if(office.name.includes("United States")){
+
+federal.push(rep);
+
+}
+
+else if(office.name.includes("State")){
+
+state.push(rep);
+
+}
+
+else{
+
+local.push(rep);
+
+}
+
+});
+
+});
+
+
+createSection("🇺🇸 Federal Government", federal, container);
+
+createSection("🏛 Massachusetts State Government", state, container);
+
+createSection("🏙 Local Government", local, container);
+
+}
+
+
+
+function createSection(title, reps, container){
+
+if(reps.length === 0) return;
+
+const section = document.createElement("section");
+
+section.className = "rep-section";
+
+const heading = document.createElement("h2");
+
+heading.textContent = title;
+
+section.appendChild(heading);
+
+
+const grid = document.createElement("div");
+
+grid.className = "rep-grid";
+
+
+reps.forEach(rep => {
+
+const card = document.createElement("div");
+
+card.className = "rep-card";
+
+card.innerHTML = `
+
+<img src="${rep.photo}" alt="${rep.name}">
+
+<h3>${rep.name}</h3>
+
+<p class="rep-role">${rep.role}</p>
+
+<p class="rep-party">${rep.party}</p>
+
+<a href="${rep.website}" target="_blank">Official Website</a>
+
+`;
+
+grid.appendChild(card);
+
+});
+
+section.appendChild(grid);
+
+container.appendChild(section);
+
+}
+
+</script>
 
 
 </body>
