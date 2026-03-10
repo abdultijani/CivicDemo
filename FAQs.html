@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CivicNow</title>
+<title>CivicNow | FAQs</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,36 +19,21 @@
 
 <body>
 
-
-<!-- HEADER -->
-
 <header>
 
 <div class="header-container">
 
-<a href="index.html"><div class="logo"> <div class="nav-box">
-CivicNow</div>
-</div>
+<a href="index.html">
+<div class="logo"><div class="nav-box">CivicNow</div></div>
 </a>
 
-<!--Navigation-->
 <nav class="main-nav">
 
-<a href="FindReps.html">
-<div class="nav-box">Find Reps</div>
-</a>
+<a href="FindReps.html"><div class="nav-box">Find Reps</div></a>
+<a href="VoterInfo.html"><div class="nav-box">Voter Info</div></a>
+<a href="About.html"><div class="nav-box">About</div></a>
+<a href="FAQs.html"><div class="nav-box">FAQs</div></a>
 
-<a href="VoterInfo.html">
-<div class="nav-box">Voter Info</div>
-</a>
-
-<a href="About.html">
-<div class="nav-box">About</div>
-</a>
-
-<a href="FAQs.html" class="active">
-<div class="nav-box">FAQs</div>
-</a>
 </nav>
 
 </div>
@@ -56,39 +41,205 @@ CivicNow</div>
 </header>
 
 
-
-<!-- MAIN -->
-
 <main class="container">
 
-<!-- HERO SECTION -->
+<section class="faq-wrapper">
 
-<section class="hero">
 
-<h1>FAQs</h1>
+<!-- SIDEBAR -->
 
-<p>This is the FAQs page</p>
+<aside class="faq-sidebar">
+
+<h3>FAQ Sections</h3>
+
+<ul>
+<li><a href="#about">About CivicNow</a></li>
+<li><a href="#platform">Using the Platform</a></li>
+<li><a href="#privacy">Privacy & Data</a></li>
+</ul>
+
+</aside>
+
+
+<!-- MAIN FAQ CONTENT -->
+
+<div class="faq-content">
+
+<h1>Frequently Asked Questions</h1>
+
+<p class="faq-intro">
+Find answers about how CivicNow works, how your representatives are
+identified, and how your information is handled.
+</p>
+
+
+<!-- SEARCH -->
+
+<input
+type="text"
+id="faq-search"
+placeholder="Search questions..."
+class="faq-search"
+/>
+
+
+<!-- ABOUT SECTION -->
+
+<h2 id="about" class="faq-category">About CivicNow</h2>
+
+<details class="faq-item reveal">
+<summary>What is CivicNow?</summary>
+<p>
+CivicNow helps Massachusetts residents quickly find their elected
+representatives at the local, state, and federal levels.
+</p>
+</details>
+
+<details class="faq-item reveal">
+<summary>Who is CivicNow for?</summary>
+<p>
+CivicNow is designed for Massachusetts residents who want an easier
+way to understand their representation and participate in civic life.
+</p>
+</details>
+
+<details class="faq-item reveal">
+<summary>Is CivicNow affiliated with the government?</summary>
+<p>
+No. CivicNow is an informational civic engagement platform and is not a
+government agency or affiliated with any political party.
+</p>
+</details>
+
+
+<!-- PLATFORM -->
+
+<h2 id="platform" class="faq-category">Using the Platform</h2>
+
+<details class="faq-item reveal">
+<summary>How does CivicNow find my representatives?</summary>
+<p>
+When you enter your address, CivicNow identifies the government
+districts associated with that location and matches them with the
+officials who represent those districts.
+</p>
+</details>
+
+<details class="faq-item reveal">
+<summary>What representatives will I see?</summary>
+
+<p>You may see representatives from several levels of government:</p>
+
+<ul>
+<li>U.S. House of Representatives</li>
+<li>U.S. Senators</li>
+<li>Massachusetts State Representatives</li>
+<li>Massachusetts State Senators</li>
+<li>Local officials when available</li>
+</ul>
+
+</details>
+
+<details class="faq-item reveal">
+<summary>Can I use CivicNow outside Massachusetts?</summary>
+<p>
+The current version of CivicNow focuses on Massachusetts residents.
+Future versions may expand to other states.
+</p>
+</details>
+
+
+<!-- PRIVACY -->
+
+<h2 id="privacy" class="faq-category">Privacy & Data</h2>
+
+<details class="faq-item reveal">
+<summary>Is my address stored?</summary>
+<p>
+No. CivicNow does not permanently store addresses entered into the
+search tool.
+</p>
+</details>
+
+
+<!-- CONTACT -->
+
+<section class="faq-contact">
+
+<h2>Still Have Questions?</h2>
+
+<p>
+Feel free to reach out.
+</p>
+
+<p>Email: info@civicnow.com</p>
+
+</section>
 
 
 </div>
 
 </section>
 
-
 </main>
 
 
-
-<!-- FOOTER -->
-
 <footer>
-<p>Privacy Policy | Contact Us</p>
 
+<p>Privacy Policy | Contact Us</p>
 
 <p>© 2026 CivicNow • Massachusetts Civic Engagement Platform • All Rights Reserved</p>
 
 </footer>
 
 
+
+<!-- FAQ SEARCH SCRIPT -->
+
+<script>
+
+const searchInput = document.getElementById("faq-search");
+const faqItems = document.querySelectorAll(".faq-item");
+
+searchInput.addEventListener("input", function(){
+
+const value = this.value.toLowerCase();
+
+faqItems.forEach(item => {
+
+const text = item.innerText.toLowerCase();
+
+item.style.display = text.includes(value) ? "block" : "none";
+
+});
+
+});
+
+</script>
+
+
+<!-- SCROLL REVEAL -->
+
+<script>
+
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(entries => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+entry.target.classList.add("active");
+}
+
+});
+
+});
+
+reveals.forEach(el => observer.observe(el));
+
+</script>
+
 </body>
+
 </html>
