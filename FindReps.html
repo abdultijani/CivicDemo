@@ -90,7 +90,7 @@
 
 <script>
 
-const API_KEY = "YOUR_API_KEY";
+const API_KEY = "AIzaSyDGxMYNn-_fmKPcvTErchZ-HbU6cw-DYA4";
 
 document.getElementById("findButton").addEventListener("click", findReps);
 
@@ -98,17 +98,38 @@ async function findReps(){
 
 const address = document.getElementById("addressInput").value;
 
-const url =
-`https://www.googleapis.com/civicinfo/v2/representatives?address=${encodeURIComponent(address)}&key=${API_KEY}`;
+if(!address){
+alert("Please enter an address.");
+return;
+}
 
-const response = await fetch(url);
+try{
+
+const response = await fetch(
+`https://www.googleapis.com/civicinfo/v2/representatives?address=${encodeURIComponent(address)}&key=${API_KEY}`
+);
 
 const data = await response.json();
+
+console.log(data); // debug
+
+if(data.error){
+alert("Address not found. Try a full street address.");
+return;
+}
 
 displayResults(data);
 
 }
 
+catch(error){
+
+console.error(error);
+alert("Unable to reach Civic API.");
+
+}
+
+}
 
 
 function displayResults(data){
@@ -117,108 +138,25 @@ const container = document.getElementById("repResults");
 
 container.innerHTML = "";
 
-
-const federal = [];
-const state = [];
-const local = [];
-
-
 data.offices.forEach(office => {
 
 office.officialIndices.forEach(index => {
 
 const official = data.officials[index];
 
-const rep = {
-
-name: official.name,
-photo: official.photoUrl || "rep-placeholder.jpg",
-party: official.party || "",
-role: office.name,
-website: official.urls ? official.urls[0] : "#"
-
-};
-
-if(office.name.includes("United States")){
-
-federal.push(rep);
-
-}
-
-else if(office.name.includes("State")){
-
-state.push(rep);
-
-}
-
-else{
-
-local.push(rep);
-
-}
-
-});
-
-});
-
-
-createSection("🇺🇸 Federal Government", federal, container);
-
-createSection("🏛 Massachusetts State Government", state, container);
-
-createSection("🏙 Local Government", local, container);
-
-}
-
-
-
-function createSection(title, reps, container){
-
-if(reps.length === 0) return;
-
-const section = document.createElement("section");
-
-section.className = "rep-section";
-
-const heading = document.createElement("h2");
-
-heading.textContent = title;
-
-section.appendChild(heading);
-
-
-const grid = document.createElement("div");
-
-grid.className = "rep-grid";
-
-
-reps.forEach(rep => {
-
 const card = document.createElement("div");
 
-card.className = "rep-card";
-
 card.innerHTML = `
-
-<img src="${rep.photo}" alt="${rep.name}">
-
-<h3>${rep.name}</h3>
-
-<p class="rep-role">${rep.role}</p>
-
-<p class="rep-party">${rep.party}</p>
-
-<a href="${rep.website}" target="_blank">Official Website</a>
-
+<h3>${official.name}</h3>
+<p>${office.name}</p>
+<p>${official.party || ""}</p>
 `;
 
-grid.appendChild(card);
+container.appendChild(card);
 
 });
 
-section.appendChild(grid);
-
-container.appendChild(section);
+});
 
 }
 
