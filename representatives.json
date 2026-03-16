@@ -37,7 +37,7 @@
         "instagram": "https://www.instagram.com/masslitgov/",
         "facebook": "https://www.facebook.com/MassLtGov"
       },
-      "photo": "https://www.mass.gov/files/styles/570x/public/2023-01/Kim_Driscoll_Official_Portrait.jpg"
+      "photo": "https://mlrjtujdxwuc.i.optimole.com/w:161/h:205/q:mauto/f:best/https://haverhilldems.org/wp-content/uploads/2024/08/Kim_Driscoll-scaled.jpg"
     },
     "attorneyGeneral": {
       "name": "Andrea Campbell",
@@ -56,7 +56,7 @@
         "instagram": "https://www.instagram.com/massago/",
         "facebook": "https://www.facebook.com/MassAGO"
       },
-      "photo": "https://www.mass.gov/files/styles/570x/public/2023-02/AG_Campbell_Headshot.jpg"
+      "photo": "https://www.mass.gov/files/styles/250x250/public/2025-10/Shopper-AG_Campbell_157.jpg?itok=EQbtFfbo"
     },
     "secretaryOfState": {
       "name": "William Galvin",
@@ -74,7 +74,7 @@
         "twitter": "https://x.com/WilliamGalvin",
         "facebook": "https://www.facebook.com/SecretaryGalvin"
       },
-      "photo": "https://www.sec.state.ma.us/cis/cisimages/galvin.jpg"
+      "photo": "https://secretaryofstate.com/wp-content/uploads/2025/10/William-F-Galvin-Secretary-of-the-Commonwealth-of-Massachusetts.png"
     },
     "treasurer": {
       "name": "Deborah Goldberg",
@@ -92,7 +92,7 @@
         "twitter": "https://x.com/MassTreasury",
         "facebook": "https://www.facebook.com/MassTreasury"
       },
-      "photo": "https://www.mastreasury.gov/wp-content/uploads/2015/03/Goldberg-headshot.jpg"
+      "photo": "https://nast.org/wp-content/uploads/2019/09/nast_bio_deb_goldberg.webp"
     },
     "auditor": {
       "name": "Diana DiZoglio",
@@ -111,7 +111,7 @@
         "instagram": "https://www.instagram.com/dianaformal/",
         "facebook": "https://www.facebook.com/DianaForMA"
       },
-      "photo": "https://www.mass.gov/files/styles/570x/public/2023-01/DiZoglio_Headshot.jpg"
+      "photo": "https://www.mass.gov/files/styles/250x250/public/2026-03/Auditor%20Portrait.jpg?itok=AqL8E-fj"
     }
   },
   "defaultDistrict": "ma-07",
@@ -308,7 +308,7 @@
               "Armed Services"
             ],
             "background": "U.S. Senator since 2013. Harvard Law professor and consumer-protection advocate. Former Special Advisor to the President and Assistant to the Treasury Secretary. Created the Consumer Financial Protection Bureau.",
-            "photo": "https://www.warren.senate.gov/imo/media/img/Warren_Headshot_Official.jpg",
+            "photo": "http://warren.senate.gov/themes/warren/images/official-portrait.jpg",
             "social": {
               "twitter": "https://x.com/SenWarren",
               "instagram": "https://www.instagram.com/senwarren/",
@@ -333,7 +333,7 @@
               "Commerce, Science & Transportation"
             ],
             "background": "U.S. Senator since 2013. Previously served in the U.S. House of Representatives for 37 years (1976–2013). Known for environmental and climate legislation including the Green New Deal resolution.",
-            "photo": "https://www.markey.senate.gov/imo/media/img/markey-official-photo.jpg",
+            "photo": "https://www.markey.senate.gov/imo/media/image/markey-about.jpeg",
             "social": {
               "twitter": "https://x.com/SenMarkey",
               "instagram": "https://www.instagram.com/edmarkey/",
@@ -358,7 +358,7 @@
             "Ways and Means (Ranking Member)"
           ],
           "background": "U.S. Representative since 1989. Ranking Member of the Ways and Means Committee. Former Mayor of Springfield (1984–1989). Senior member focused on tax policy, trade, and retirement security.",
-          "photo": "https://neal.house.gov/sites/evo-subsites/neal.house.gov/files/evo-media-image/neal-official-photo-116th.jpg",
+          "photo": "https://duckduckgo.com/i/ce5083ee2541bbd3.jpg",
           "social": {
             "twitter": "https://x.com/RepRichardNeal",
             "instagram": "https://www.instagram.com/reprichardneal/",
@@ -405,7 +405,7 @@
             "Children, Families & Persons with Disabilities"
           ],
           "background": "State Representative for the 10th Hampden District since 2015. Speaker Pro Tempore of the Massachusetts House. Focuses on housing, education, and Latino community advocacy.",
-          "photo": "https://malegislature.gov/Legislators/Profile/C_G2/Photo"
+          "photo": "https://malegislature.gov/Legislators/Profile/170/C_G1.jpg" 
         }
       },
       "local": {
@@ -424,7 +424,7 @@
             "twitter": "https://x.com/MayorSarno",
             "facebook": "https://www.facebook.com/DomenicSarnoSpringfield"
           },
-          "photo": "https://www.springfield-ma.gov/sites/default/files/mayor-sarno-headshot.jpg"
+          "photo": "https://www.springfield-ma.gov/cos/fileadmin/_processed_/a/f/csm_Mayor_Sarno_Headshot_2_01_460fb9fd7e.jpg"
         },
         "cityCouncil": {
           "name": "Springfield City Council",
@@ -1112,7 +1112,7 @@
             "Agriculture"
           ],
           "background": "U.S. Representative since 1997. Ranking Member of the House Rules Committee. Former Worcester City Councilor and Mayor. Focuses on hunger relief, veterans, and mental health.",
-          "photo": "https://mcgovern.house.gov/sites/evo-subsites/mcgovern.house.gov/files/evo-media-image/mcgov-headshot-2023.jpg",
+          "photo": "https://mcgovern.house.gov/UploadedPhotos/HighResolution/eb37b2f4-df0a-4c9c-b9c7-604bda009f3c.jpg",
           "social": {
             "twitter": "https://x.com/RepMcGovern",
             "instagram": "https://www.instagram.com/repmcgovern/",
@@ -1130,7 +1130,7 @@
           "district": "First Worcester District",
           "phone": "(617) 722-1485",
           "email": "robyn.kennedy@masenate.gov",
-          "website": "https://malegislature.gov/Legislators/Profile/RMK1",
+          "website": "https://malegislature.gov/Legislators/Profile/RKK0/District",
           "office": "State House, Room 511-A, Boston, MA 02133",
           "since": "2022",
           "nextElection": "2026",
@@ -1140,7 +1140,7 @@
             "Housing"
           ],
           "background": "State Senator for the First Worcester District since 2022. Former Worcester City Councilor. Focuses on education equity, public health, and housing affordability.",
-          "photo": "https://malegislature.gov/Legislators/Profile/RMK1/Photo"
+          "photo": "https://malegislature.gov/Legislators/Profile/170/RKK0.jpg"
         },
         "representative": {
           "name": "Daniel Donahue",
@@ -1159,7 +1159,7 @@
             "Veterans & Federal Affairs"
           ],
           "background": "State Representative for the 16th Worcester District since 2013. Focuses on labor, workforce development, and veterans' affairs in the Worcester region.",
-          "photo": "https://malegislature.gov/Legislators/Profile/DJD1/Photo"
+          "photo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.squarespace-cdn.com%2Fcontent%2Fv1%2F5ca2790e9b7d153f6cfd828c%2F1554302218895-4JRFB5KQFAR1Y7MSQ5UV%2FDan%2BDonahue.jpg&f=1&nofb=1&ipt=0aefe27eb509336802259b4e3b750eb2e08e3ae67bc3ae87983a6ef0987bb6c5"
         }
       },
       "local": {
@@ -1970,7 +1970,7 @@
             "Armed Services"
           ],
           "background": "U.S. Representative since 2019. Former Lowell City Councilor. Focuses on working families, veterans, education, and expanding access to childcare and paid leave.",
-          "photo": "https://trahan.house.gov/sites/evo-subsites/trahan.house.gov/files/evo-media-image/trahan-official-2023.jpg",
+          "photo": "https://trahan.house.gov/UploadedPhotos/MediumResolution/9ca0fc79-5793-4692-bd0a-263a82557707.jpg",
           "social": {
             "twitter": "https://x.com/RepLoriTrahan",
             "instagram": "https://www.instagram.com/reploritrahan/",
@@ -2016,7 +2016,7 @@
             "Public Safety & Homeland Security"
           ],
           "background": "State Representative for the 16th Middlesex District since 2011. Focuses on transportation infrastructure, public safety, and local aid for Lowell-area communities.",
-          "photo": "https://malegislature.gov/Legislators/Profile/RME1/Photo"
+          "photo": "https://malegislature.gov/Legislators/Profile/170/RME1.jpg"
         }
       },
       "local": {
@@ -2817,7 +2817,7 @@
             "Transportation & Infrastructure"
           ],
           "background": "U.S. Representative since 2021. Former Newton City Councilor and Marine Corps officer. Focuses on infrastructure, financial services, and veterans' issues.",
-          "photo": "https://auchincloss.house.gov/sites/evo-subsites/auchincloss.house.gov/files/evo-media-image/auchincloss-official-2023.jpg",
+          "photo": "https://pbs.twimg.com/profile_images/1818404746270507008/j-quMnq8_400x400.jpg",
           "social": {
             "twitter": "https://x.com/RepAuchincloss",
             "instagram": "https://www.instagram.com/repauchincloss/",
@@ -2844,7 +2844,7 @@
             "Education"
           ],
           "background": "State Senator for the Norfolk, Bristol & Middlesex District since 2019. Focuses on environmental protection, reproductive rights, and criminal justice reform.",
-          "photo": "https://malegislature.gov/Legislators/Profile/BER0/Photo"
+          "photo": "https://static.wixstatic.com/media/9d286e_d8023fc4569f458b8911a4c8d905b342~mv2.jpg/v1/crop/x_1218,y_0,w_4626,h_5183/fill/w_650,h_732,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/9d286e_d8023fc4569f458b8911a4c8d905b342~mv2.jpg"
         },
         "representative": {
           "name": "Kay Khan",
@@ -2863,7 +2863,7 @@
             "Mental Health & Substance Use"
           ],
           "background": "State Representative for the 11th Middlesex District since 1995. Chair of the Health Care Financing Committee. Focuses on mental health, substance use treatment, and healthcare access.",
-          "photo": "https://malegislature.gov/Legislators/Profile/KK0/Photo"
+          "photo": "https://www.mawomenshistory.org/sites/default/files/styles/1x1_medium/public/images/rep_khan_headshot.jpg?h=35d8518a&itok=GUlLMC6i"
         }
       },
       "local": {
@@ -2953,10 +2953,10 @@
           "city": "Dedham",
           "phone": "(781) 751-9100",
           "email": "selectboard@dedham.ma.us",
-          "website": "https://www.dedham.ma.us/selectboard",
+          "website": "https://www.dedham-ma.gov/your-government/select-board/",
           "office": "26 Bryant Street, Dedham, MA 02026",
           "background": "The Dedham Select Board is the chief executive body of Dedham, consisting of 5 elected members serving staggered 3-year terms. The Board sets town policy, approves the annual budget, appoints the Town Administrator and department heads, issues licenses and permits, and oversees all town operations. Meetings are open to the public — visit the town website for the current meeting schedule and current board member names and contacts.",
-          "photo": "https://www.mass.gov/libraries/mayflower-artifacts/assets/images/logo/stateseal.png",
+          "photo": "https://www.dedham-ma.gov/home/showpublishedimage/7310/638762810039570000",
           "members": 5
         },
         {
@@ -3537,7 +3537,7 @@
             "House Minority Whip"
           ],
           "background": "U.S. Representative since 2013. House Minority Whip — the second-highest-ranking Democrat in the House. Former state senator. Focuses on education, gun safety, and women's economic security.",
-          "photo": "https://katherineclark.house.gov/sites/evo-subsites/katherineclark.house.gov/files/evo-media-image/clark-official-2023.jpg",
+          "photo": "https://katherineclark.house.gov/_cache/files/b/b/bb0f0d6a-6d4a-4af4-acc4-1463b06912fd/90F42AE2DADF32DF532111CCD921FECC99DC2CB9722A38C5D1333E212831652F.kc-official-headshot-2023.jpg",
           "social": {
             "twitter": "https://x.com/RepKClark",
             "instagram": "https://www.instagram.com/repkclark/",
@@ -4040,7 +4040,7 @@
             "Transportation & Infrastructure"
           ],
           "background": "U.S. Representative since 2015. Marine Corps veteran and Harvard Business School graduate. Focuses on veterans' affairs, transportation, national security, and mental health.",
-          "photo": "https://moulton.house.gov/sites/evo-subsites/moulton.house.gov/files/evo-media-image/moulton-official-2023.jpg",
+          "photo": "https://moulton.house.gov/sites/evo-subsites/moulton.house.gov/files/styles/large/public/evo-media-image/moultonheadshotthumb.jpg?itok=aggbM8S_",
           "social": {
             "twitter": "https://x.com/sethmoulton",
             "instagram": "https://www.instagram.com/sethmoulton/",
@@ -4176,7 +4176,7 @@
             "twitter": "https://x.com/GaryChristenson",
             "facebook": "https://www.facebook.com/GaryChristenson"
           },
-          "photo": "https://www.cityofmalden.org/sites/default/files/christenson-headshot.jpg"
+          "photo": "https://www.cityofmalden.org/ImageRepository/Document?documentID=2264"
         },
         {
           "name": "Breanna Lungo-Koehn",
@@ -4604,7 +4604,7 @@
             "Oversight & Accountability"
           ],
           "background": "U.S. Representative since 2019. Former Boston City Councilor-At-Large. First Black woman elected to Congress from Massachusetts. Focuses on housing justice, healthcare, student debt, and racial equity.",
-          "photo": "https://pressley.house.gov/sites/evo-subsites/pressley.house.gov/files/evo-media-image/pressley-official-2023.jpg",
+          "photo": "https://pressley.house.gov/wp-content/uploads/2022/06/Layer-35.png",
           "social": {
             "twitter": "https://x.com/AyannaPressley",
             "instagram": "https://www.instagram.com/ayannapressley/",
@@ -4652,7 +4652,7 @@
             "Black & Latino Caucus"
           ],
           "background": "State Representative for the 6th Suffolk District since 2011. Member of the Ways & Means Committee. Focuses on education equity, economic opportunity, and Black community advocacy.",
-          "photo": "https://malegislature.gov/Legislators/Profile/RH0/Photo"
+          "photo": "https://duckduckgo.com/i/b82c6adc58d5d2c7.jpg"
         }
       },
       "local": {
@@ -5000,7 +5000,7 @@
             "Oversight & Accountability"
           ],
           "background": "U.S. Representative since 2001. Former Massachusetts State Senator. Focuses on workers' rights, veterans, financial services oversight, and South Shore infrastructure.",
-          "photo": "https://lynch.house.gov/sites/evo-subsites/lynch.house.gov/files/evo-media-image/lynch-official-2023.jpg",
+          "photo": "https://lynch.house.gov/index.cfm?a=Files.Serve&File_id=9E905310-376F-475D-BDCA-07A9AE1655BB",
           "social": {
             "twitter": "https://x.com/RepStephenLynch",
             "instagram": "https://www.instagram.com/repstephenlynch/",
@@ -5027,7 +5027,7 @@
             "Transportation"
           ],
           "background": "State Senator for the Plymouth & Norfolk District since 2015. Minority member of the Ways & Means Committee. Focuses on fiscal responsibility, transportation, and local aid.",
-          "photo": "https://malegislature.gov/Legislators/Profile/PDO0/Photo"
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Plymouth_%26_Norfolk_State_Senator_Patrick_M._O%27Connor.png/500px-Plymouth_%26_Norfolk_State_Senator_Patrick_M._O%27Connor.png"
         },
         "representative": {
           "name": "Bruce Oliveira",
@@ -5809,7 +5809,7 @@
             "Armed Services"
           ],
           "background": "U.S. Representative since 2011. Former Norfolk County District Attorney. Focuses on foreign affairs, maritime issues, Cape Cod environment, fishing industry, and veterans.",
-          "photo": "https://keating.house.gov/sites/evo-subsites/keating.house.gov/files/evo-media-image/keating-official-2023.jpg",
+          "photo": "https://duckduckgo.com/i/a3795a44470074b5.jpg",
           "social": {
             "twitter": "https://x.com/USRepKeating",
             "instagram": "https://www.instagram.com/usrepkeating/",
@@ -6466,7 +6466,7 @@
         "facebook": "https://www.facebook.com/DonaldTrump",
         "youtube": "https://www.youtube.com/c/DonaldTrump"
       },
-      "photo": "https://www.whitehouse.gov/wp-content/uploads/2025/01/trump-official-portrait.jpg"
+      "photo": "https://www.whitehouse.gov/wp-content/uploads/2025/01/Donald-J-Trump.jpg"
     },
     "vicePresident": {
       "name": "JD Vance",
@@ -6486,7 +6486,7 @@
         "instagram": "https://www.instagram.com/jdvance1/",
         "facebook": "https://www.facebook.com/JDVance1"
       },
-      "photo": "https://www.whitehouse.gov/wp-content/uploads/2025/01/vance-official-portrait.jpg"
+      "photo": "https://www.whitehouse.gov/wp-content/uploads/2025/01/Vice-President-Elect-J.D.-Vance.jpg"
     }
   }
 }
