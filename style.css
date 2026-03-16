@@ -57,11 +57,26 @@ margin: auto;
 
 
 .logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
 
-font-size: 24px;
+.logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+  /* Remove any nav-box styling that might bleed in */
+ 
+  padding: 0;
+  background: none;
+  transition: opacity .2s;
+  border-radius: 10px;
+  border: 2px solid white;
+}
 
-font-weight: 600;
-
+.logo-img:hover {
+  opacity: 0.88;
 }
 
 
@@ -126,13 +141,17 @@ transform: scale(1.05);
 /* MAIN CONTAINER */
 
 .container {
-
 max-width: 1100px;
-
 margin: auto;
+padding: 24px 14px;
+}
 
-padding: 40px 20px;
+@media (min-width: 540px) {
+  .container { padding: 32px 20px; }
+}
 
+@media (min-width: 769px) {
+  .container { padding: 40px 20px; }
 }
 
 
@@ -432,28 +451,33 @@ padding: 20px;
 
 @media (max-width: 768px) {
 
-.header-container {
-
-flex-direction: column;
-
-gap: 15px;
-
+header {
+  padding: 10px 14px;
 }
 
+.header-container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
 
+.logo { font-size: 18px; }
+.logo-img { height: 40px; }
 
 .main-nav {
-
-flex-direction: column;
-
-align-items: center;
-
-display:flex;
-  justify-content:center;
-  gap:10px;
-  flex-wrap:wrap;
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: flex-end;
 }
+
+.nav-box {
+  padding: 6px 10px;
+  font-size: 0.75rem;
+}
+
 
 
 
@@ -1223,4 +1247,73 @@ margin-bottom:30px;
 @media (max-width: 480px) {
   .fr-search-inner { flex-wrap: wrap; }
   .fr-search-field-wrap { max-width: 100%; }
+}
+
+/* ══════════════════════════════════════════
+   NEUTRALITY BANNER
+   Appears on FindReps and other pages
+══════════════════════════════════════════ */
+.neutrality {
+  background: #fff8e1;
+  border-bottom: 1px solid #f0d060;
+  color: #5a4500;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 8px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  letter-spacing: .01em;
+  text-align: center;
+}
+
+.neutrality svg {
+  flex-shrink: 0;
+  color: #b8860b;
+}
+
+@media (max-width: 768px) {
+  .neutrality { padding: 8px 16px; font-size: 0.72rem; }
+}
+
+/* ══════════════════════════
+   BACK TO TOP BUTTON
+   Shared by FindReps and VoterInfo
+══════════════════════════ */
+.back-to-top {
+  position: fixed;
+  bottom: 28px;
+  right: 24px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #002147;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0,33,71,.35);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity .25s ease, transform .25s ease, background .2s;
+  pointer-events: none;
+  z-index: 1000;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.back-to-top--visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.back-to-top:hover  { background: #C9A227; }
+.back-to-top:active { background: #C9A227; transform: scale(.94); }
+
+@media (max-width: 480px) {
+  .back-to-top { bottom: 18px; right: 16px; width: 42px; height: 42px; }
 }
