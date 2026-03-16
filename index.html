@@ -15,7 +15,11 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="64x64" href="favicon-64.png" />
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -28,9 +32,7 @@
 
 <div class="header-container">
 
-<a href="index.html"><div class="logo"> <div class="nav-box">
-CivicNow</div>
-</div>
+<a href="index.html"><div class="logo"><img src="wavcon.png" alt="CivicNow" class="logo-img" /></div>
 </a>
 
 <!--Navigation-->
@@ -38,11 +40,11 @@ CivicNow</div>
 <nav class="main-nav">
 
 <a href="FindReps.html">
-<div class="nav-box">Find Reps</div>
+<div class="nav-box">Find Representatives</div>
 </a>
 
 <a href="VoterInfo.html">
-<div class="nav-box">Voter Info</div>
+<div class="nav-box">Voter Information</div>
 </a>
 
 <a href="About.html">
@@ -75,9 +77,14 @@ CivicNow</div>
 
 <div class="search-box">
 
-<input type="text" placeholder="Enter your address">
+<input
+  type="text"
+  id="homeAddressInput"
+  placeholder="Enter your Massachusetts address"
+  autocomplete="street-address"
+/>
 
-<p><button>Find My Representatives</button></p>
+<p><button onclick="goToReps()">Find My Representatives</button></p>
 
 </div>
 
@@ -149,6 +156,31 @@ and how to participate in local government.
 
 </footer>
 
-
+<script>
+  function goToReps() {
+    const addr = document.getElementById('homeAddressInput').value.trim();
+    if (!addr) {
+      document.getElementById('homeAddressInput').focus();
+      return;
+    }
+    // Sends address as URL param → FindReps.html auto-searches on load
+    window.location.href = 'FindReps.html?address=' + encodeURIComponent(addr);
+  }
+ 
+  // Allow Enter key on homepage
+  document.getElementById('homeAddressInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') goToReps();
+  });
+</script>
+<!-- ============================================================
+     HOW IT WORKS:
+     - User types address on homepage and hits the button
+     - Browser navigates to: FindReps.html?address=123+Main+St+Boston+MA
+     - FindReps.html reads the ?address= param on load
+     - Automatically runs the search and displays results
+     ============================================================ -->
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg></button>
+<script>window.addEventListener("scroll",function(){var b=document.getElementById("backToTop");if(b)b.classList.toggle("back-to-top--visible",window.scrollY>400);});</script>
 </body>
 </html>
